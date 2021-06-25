@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width initial-scale=1'>
+	<title>使用说明</title>
+	<link href='https://fonts.loli.net/css?family=Ubuntu:400,700,400italic,700italic' rel='stylesheet'
+		type='text/css' />
+	<link href='https://fonts.loli.net/css?family=Raleway:600,400&subset=latin,latin-ext' rel='stylesheet'
+		type='text/css' />
+	<link rel="stylesheet" href="vui.css">
+	<link rel="stylesheet" href="files/owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="files/owlcarousel/owl.theme.default.min.css">
+	<link rel="stylesheet" href="IMOZAR_files/magnific-popup.css">
+</head>
+
+<body class='typora-export'>
+	<div id='write' class='is-mac'>
+		<h1><a name='header-n17' class='md-header-anchor '></a>苹果版</h1>
+		<p><a href='https://fun90.com/vui.html' class='url'>安卓/电脑版请点击这里</a></p>
+		<h3><a name='header-n51' class='md-header-anchor '></a>第一步、下载客户端</h3>
+		<p>使用香港或国外地区的苹果账号，登录App Store，搜索Shadowrocket（付费软件），下载安装</p>
+		<h3><a name='header-n8' class='md-header-anchor '></a>第二步、复制订阅链接</h3>
+		<p>1. 用浏览器(<span class="colour" style="color:red">不要在微信里</span>)登录网址<a href='https://vui.fun90.com' target='_blank' class='url'>https://vui.fun90.com</a></p>
+		<p><img src='files/1.png' alt='1.png' referrerPolicy='no-referrer' /></p>
+		<p>2. 左右滑动查看步骤图</p>
+		<div class="phone-container">
+			<div class="owl-carousel owl-theme">
+				<div class="item">
+					<a href="files/2-1.jpg" class="popup-link">
+						<img src='files/2-1.jpg' referrerPolicy='no-referrer' />
+					</a>
+				</div>
+				<div class="item">
+					<a href="files/2-2.jpg" class="popup-link">
+						<img src='files/2-2.jpg' referrerPolicy='no-referrer' />
+					</a>
+				</div>
+				<div class="item">
+					<a href="files/2-3.jpg" class="popup-link">
+						<img src='files/2-3.jpg' referrerPolicy='no-referrer' />
+					</a>
+				</div>
+			</div>
+		</div>
+		<h3><a name='header-n11' class='md-header-anchor '></a>第四步、客户端设置</h3>
+		<h4><a name='header-n13' class='md-header-anchor '>苹果版：Shadowrocket 视频教程</a></h4>
+		<p>将复制好的订阅链接按照视频粘贴到软件中</p>
+		<p>
+			<video controls="" poster="files/vedio2.png">
+				<source id="mp4" src="files/Shadowrocket.mp4" type="video/mp4">
+				您的浏览器不支持该视频，请更换浏览器查看
+			</video>
+		</p>
+	</div>
+
+	<script src="files/jquery.min.js"></script>
+	<script src="files/owlcarousel/owl.carousel.min.js"></script>
+	<script src="IMOZAR_files/jquery.magnific-popup.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			var owl = $('.owl-carousel');
+			owl.owlCarousel({
+				items: 1,
+				margin: 10,
+				nav: true,
+				loop: false,
+			})
+		});
+		$('.popup-link').magnificPopup({
+			type: 'image',
+			removalDelay: 300,
+			mainClass: 'mfp-fade',
+			gallery: {
+				enabled: true
+			},
+			zoom: {
+				enabled: true,
+				duration: 260,
+				easing: 'ease-in',
+			}
+		});
+	</script>
+</body>
+
+</html>

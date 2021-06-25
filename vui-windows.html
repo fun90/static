@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width initial-scale=1'>
+	<title>使用说明</title>
+	<link href='https://fonts.loli.net/css?family=Ubuntu:400,700,400italic,700italic' rel='stylesheet'
+		type='text/css' />
+	<link href='https://fonts.loli.net/css?family=Raleway:600,400&subset=latin,latin-ext' rel='stylesheet'
+		type='text/css' />
+	<link rel="stylesheet" href="vui.css">
+	<link rel="stylesheet" href="files/owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="files/owlcarousel/owl.theme.default.min.css">
+	<link rel="stylesheet" href="files/magnific-popup.css">
+</head>
+
+<body class='typora-export'>
+	<div id='write' class='is-mac'>
+		<h2>电脑版</h2>
+		<p style="text-align: center;"><a href='https://fun90.com/vui-android.html'>安卓版教程</a> <a href='https://fun90.com/vui-ios.html' class='url'>苹果版教程</a></p>
+
+		
+		<h4>一、下载软件</h4>
+		<p><a href='https://cloud.fun90.com/s/CQQCYsjq2FbmWi2' class='url'>点我下载</a></p>
+
+		<h4>二、电脑版设置如下</h4>
+		<p>
+			左右滑动查看步骤图，将复制好的订阅链接按步骤粘贴到软件中
+			<div class="owl-carousel owl-theme">
+				<div class="item">
+					<a href="files/Windows-1.png" class="popup-link">
+						<img src='files/Windows-1.png' referrerPolicy='no-referrer' />
+					</a>
+				</div>
+				<div class="item">
+					<a href="files/Windows-2.png" class="popup-link">
+						<img src='files/Windows-2.png' referrerPolicy='no-referrer' />
+					</a>
+				</div>
+			</div>
+		</p>
+	</div>
+
+	<script src="files/jquery.min.js"></script>
+	<script src="files/owlcarousel/owl.carousel.min.js"></script>
+	<script src="files/jquery.magnific-popup.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			var owl = $('.owl-carousel');
+			owl.owlCarousel({
+				items: 1,
+				margin: 10,
+				nav: true,
+				loop: false,
+			})
+		});
+		$('.popup-link').magnificPopup({
+			type: 'image',
+			removalDelay: 300,
+			mainClass: 'mfp-fade',
+			gallery: {
+				enabled: true
+			},
+			zoom: {
+				enabled: true,
+				duration: 260,
+				easing: 'ease-in',
+			}
+		});
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width initial-scale=1'>
+	<title>使用说明</title>
+	<link href='https://fonts.loli.net/css?family=Ubuntu:400,700,400italic,700italic' rel='stylesheet'
+		type='text/css' />
+	<link href='https://fonts.loli.net/css?family=Raleway:600,400&subset=latin,latin-ext' rel='stylesheet'
+		type='text/css' />
+	<link rel="stylesheet" href="vui.css">
+	<link rel="stylesheet" href="files/owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="files/owlcarousel/owl.theme.default.min.css">
+	<link rel="stylesheet" href="files/magnific-popup.css">
+</head>
+
+<body class='typora-export'>
+	<div id='write' class='is-mac'>
+		<h2>苹果版</h2>
+		<p style="text-align: center;"><a href='https://fun90.com/vui-android.html'>安卓版教程</a> <a href='https://fun90.com/vui-windows.html' class='url'>电脑版教程</a></p>
+
+		<h4>一、下载软件</h4>
+		<p>使用香港或国外地区的苹果账号，登录App Store，搜索下载(如下图)</p>
+		<p><img src="files/iOS.jpg"/></p>
+
+
+		<h4>二、苹果版视频教程</h4>
+		<p>将复制好的订阅链接按照视频粘贴到软件中</p>
+		<p>
+			<video controls="" poster="files/vedio2.png">
+				<source id="mp4" src="files/iOS.mp4" type="video/mp4">
+				您的浏览器不支持该视频，请更换浏览器查看
+			</video>
+		</p>
+	</div>
+
+	<script src="files/jquery.min.js"></script>
+	<script src="files/owlcarousel/owl.carousel.min.js"></script>
+	<script src="files/jquery.magnific-popup.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			var owl = $('.owl-carousel');
+			owl.owlCarousel({
+				items: 1,
+				margin: 10,
+				nav: true,
+				loop: false,
+			})
+		});
+		$('.popup-link').magnificPopup({
+			type: 'image',
+			removalDelay: 300,
+			mainClass: 'mfp-fade',
+			gallery: {
+				enabled: true
+			},
+			zoom: {
+				enabled: true,
+				duration: 260,
+				easing: 'ease-in',
+			}
+		});
+	</script>
+</body>
+
+</html>
