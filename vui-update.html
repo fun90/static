@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width initial-scale=1'>
+	<title>使用说明</title>
+	<link rel="stylesheet" href="vui.css">
+	<link rel="stylesheet" href="files/owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="files/owlcarousel/owl.theme.default.min.css">
+	<link rel="stylesheet" href="files/magnific-popup.css">
+</head>
+
+<body class='typora-export'>
+	<div id='write' class='is-mac'>
+		<h2>手动更新订阅</h2>
+		<p style="text-align: center;"><a href='vui.html'>主页</a></p>
+
+		<h4>苹果版更新订阅</h4>
+		<p>
+			<img src='files/iOS-Update.png' />
+		</p>
+
+		<h4>安卓版更新订阅</h4>
+		<p>左右滑动查看步骤图
+			<div class="owl-carousel owl-theme">
+				<div class="item">
+					<a href="files/Android-Update1.png" class="popup-link">
+						<img src='files/Android-Update1.png' referrerPolicy='no-referrer' />
+					</a>
+				</div>
+				<div class="item">
+					<a href="files/Android-Update2.png" class="popup-link">
+						<img src='files/Android-Update2.png' referrerPolicy='no-referrer' />
+					</a>
+				</div>
+			</div>
+		</p>
+	</div>
+
+	<script src="files/jquery.min.js"></script>
+	<script src="files/owlcarousel/owl.carousel.min.js"></script>
+	<script src="files/jquery.magnific-popup.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			var owl = $('.owl-carousel');
+			owl.owlCarousel({
+				items: 1,
+				margin: 10,
+				nav: true,
+				loop: false,
+			})
+		});
+		$('.popup-link').magnificPopup({
+			type: 'image',
+			removalDelay: 300,
+			mainClass: 'mfp-fade',
+			gallery: {
+				enabled: true
+			},
+			zoom: {
+				enabled: true,
+				duration: 260,
+				easing: 'ease-in',
+			}
+		});
+	</script>
+</body>
+
+</html>
